@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)]()
 
 ## Resumen
-**FleetLogix Data Architecture** es un proyecto integrador que diseña e implementa una solución completa de datos para una empresa de logística (≈200 vehículos, 5 ciudades), abarcando generación de datos, base transaccional, análisis SQL, Data Warehouse y arquitectura en la nube.  
+Segundo proyecto integrador del bootcamp de Data Science de Henry  **FleetLogix Data Architecture**, donde diseñé e implementé una solución completa de datos para una empresa de logística (≈200 vehículos, 5 ciudades), abarcando generación de datos, base transaccional, análisis SQL, Data Warehouse y arquitectura en la nube.  
 
 Incluye:
 - Generación masiva de datos sintéticos (≈500k registros).
@@ -18,27 +18,28 @@ Incluye:
 
 ## Estructura del repositorio
 FleetLogix_PI2/
-
+```txt
 ├── data_generation/
-│ ├── generate_data.py # Script para generar datos sintéticos (Faker + pandas)
-│ └── logs/ # Logs de ejecución y control de calidad
+│   ├── generate_data.py          # Script para generar datos sintéticos (Faker + pandas)
+│   └── logs/                     # Logs de ejecución y control de calidad
 │
 ├── sql_analysis/
-│ ├── queries.sql # Consultas SQL analíticas (12 queries clave)
-│ ├── explain_analyze_results.txt
-│ └── performance_report.docx # Informe técnico de optimización
+│   ├── queries.sql               # Consultas SQL analíticas (12 queries clave)
+│   ├── explain_analyze_results.txt
+│   └── performance_report.docx   # Informe técnico de optimización
 │
 ├── warehouse_snowflake/
-│ ├── ddl_snowflake.sql # DDL - tablas del DW (hechos + dimensiones)
-│ ├── etl_pipeline.py # Pipeline ETL para carga incremental y SCD2
-│ └── config_scd2_notes.md
+│   ├── ddl_snowflake.sql         # DDL - tablas del DW (hechos + dimensiones)
+│   ├── etl_pipeline.py           # Pipeline ETL para carga incremental y SCD2
+│   └── config_scd2_notes.md
 │
 ├── cloud_architecture/
-│ ├── aws_diagram.png # Diagrama de arquitectura (AWS serverless)
-│ ├── lambda_functions/ # Código de Lambdas (Python)
-│ └── boto3_scripts.py # Scripts auxiliares para S3/RDS/DynamoDB
+│   ├── aws_diagram.png           # Diagrama de arquitectura (AWS serverless)
+│   ├── lambda_functions/         # Código de Lambdas en Python
+│   └── boto3_scripts.py          # Scripts auxiliares para S3/RDS/DynamoDB
 │
 └── README.md
+```
 
 
 ---
