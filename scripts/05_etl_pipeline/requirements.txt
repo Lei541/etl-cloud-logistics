@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==2.2.0
+psycopg2-binary==2.9.9
+snowflake-connector-python==3.18.0
+snowflake-connector-python[pandas]==3.18.0
+pyarrow==14.0.1
+configparser==6.0.0
+schedule==1.2.0
